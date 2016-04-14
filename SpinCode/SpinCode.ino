@@ -30,9 +30,7 @@ void setup()
   {
     while (1);
   }
-  
-  //analogWrite(r,1);
-  //analogWrite(g,1);
+
 }
 
 void loop()
@@ -45,20 +43,6 @@ void loop()
   }
   sum = sum >> 3;
   accel_in = (int)sum;
-  
-  // assuming accel_in = signed 16 bit input
-  // r -> pwm value for red from 0 -> 255
-  // g -> pwm value for green 0 -> 255
-  // b -> pwm value for blue 0 -> 255
-  
-//  accel_in = accel_in + 1;
-
-  
-//  for(int i = 0; i < 127; i++)
-//  { analogWrite(g,127-i);
-//    analogWrite(r,i);
-//      delay(10);
-//  }
   
 accel_in = accel_in & ABS_MASK; // take absolute value of accelerometer data
 masked_in = accel_in & BIT_MASK; // 13 bit mask of accelerometer data
