@@ -43,8 +43,7 @@ void loop()
   }
   sum = sum >> 3;
   accel_in = (int)sum;
-  
-accel_in = accel_in & ABS_MASK; // take absolute value of accelerometer data
+
 masked_in = accel_in & BIT_MASK; // 13 bit mask of accelerometer data
   
 if(accel_in < QUARTER){ // first quarter of accelerometer range
