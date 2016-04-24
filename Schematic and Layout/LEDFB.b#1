@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -470,18 +470,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <library name="TLV61225">
 <description>TLV61225</description>
 <packages>
-<package name="DCK0006A_L">
-<smd name="1" x="-0.949996875" y="0.65" dx="0.4" dy="0.65" layer="1" rot="R90"/>
-<smd name="2" x="-0.949996875" y="0" dx="0.4" dy="0.65" layer="1" rot="R90"/>
-<smd name="3" x="-0.949996875" y="-0.65" dx="0.4" dy="0.65" layer="1" rot="R90"/>
-<smd name="4" x="0.95" y="-0.65" dx="0.4" dy="0.65" layer="1" rot="R90"/>
-<smd name="5" x="0.95" y="0" dx="0.4" dy="0.65" layer="1" rot="R90"/>
-<smd name="6" x="0.95" y="0.65" dx="0.4" dy="0.65" layer="1" rot="R90"/>
-<wire x1="0.254" y1="-1.0922" x2="0.254" y2="1.0922" width="0.2032" layer="51"/>
-<wire x1="-0.254" y1="-1.0922" x2="0.254" y2="-1.0922" width="0.2032" layer="51"/>
-<wire x1="-0.254" y1="-1.0922" x2="-0.254" y2="0.6096" width="0.2032" layer="51"/>
-<wire x1="-0.254" y1="0.6096" x2="0.254" y2="1.0922" width="0.2032" layer="51"/>
-<text x="-1.143" y="1.8542" size="1.27" layer="51" ratio="6" rot="SR0">Designator239</text>
+<package name="DCK0006A_M">
+<smd name="1" x="-0.949996875" y="0.65" dx="0.4" dy="1.05" layer="1" rot="R90"/>
+<smd name="2" x="-0.949996875" y="0" dx="0.4" dy="1.05" layer="1" rot="R90"/>
+<smd name="3" x="-0.949996875" y="-0.65" dx="0.4" dy="1.05" layer="1" rot="R90"/>
+<smd name="4" x="0.95" y="-0.65" dx="0.4" dy="1.05" layer="1" rot="R90"/>
+<smd name="5" x="0.95" y="0" dx="0.4" dy="1.05" layer="1" rot="R90"/>
+<smd name="6" x="0.95" y="0.65" dx="0.4" dy="1.05" layer="1" rot="R90"/>
+<wire x1="0.0508" y1="-1.0922" x2="0.0508" y2="1.0922" width="0.2032" layer="51"/>
+<wire x1="-0.0508" y1="-1.0922" x2="-0.0508" y2="1.0922" width="0.2032" layer="51"/>
+<wire x1="-0.0508" y1="-1.0922" x2="0.0508" y2="-1.0922" width="0.2032" layer="51"/>
+<wire x1="-0.0508" y1="1.0922" x2="0.0508" y2="1.0922" width="0.2032" layer="51"/>
+<wire x1="-0.9398" y1="1.2954" x2="-1.1938" y2="1.2954" width="0.254" layer="51" curve="-180"/>
+<wire x1="-1.1938" y1="1.2954" x2="-0.9398" y2="1.2954" width="0.254" layer="51" curve="-180"/>
+<text x="-1.7526" y="2.2606" size="1.27" layer="51" ratio="6" rot="SR0">Designator238</text>
 <wire x1="-1.143" y1="-0.1016" x2="-1.143" y2="0.1016" width="0.1524" layer="21"/>
 <wire x1="-1.143" y1="0.1016" x2="-0.635" y2="0.1016" width="0.1524" layer="21"/>
 <wire x1="-0.635" y1="0.1016" x2="-0.6096" y2="0.1016" width="0.1524" layer="21"/>
@@ -547,6 +549,50 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-0.6858" y="0.6604" size="1.27" layer="21" ratio="6" rot="SR270">.Designator</text>
 <text x="-2.8702" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 <text x="-3.2766" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;Value</text>
+</package>
+</packages>
+</library>
+<library name="itg_3701">
+<packages>
+<package name="QFN-16">
+<polygon width="0" layer="31">
+<vertex x="-0.7745" y="-0.7745"/>
+<vertex x="0.7745" y="-0.7745"/>
+<vertex x="0.7745" y="0.7745"/>
+<vertex x="-0.7745" y="0.7745"/>
+</polygon>
+<wire x1="-1.75" y1="1.75" x2="1.75" y2="1.75" width="0.1016" layer="51"/>
+<wire x1="1.75" y1="1.75" x2="1.75" y2="-1.75" width="0.1016" layer="51"/>
+<wire x1="1.75" y1="-1.75" x2="-1.75" y2="-1.75" width="0.1016" layer="51"/>
+<wire x1="-1.75" y1="-1.75" x2="-1.75" y2="1.75" width="0.1016" layer="51"/>
+<wire x1="1.75" y1="1.75" x2="1.75" y2="1.025" width="0.1016" layer="21"/>
+<wire x1="1.025" y1="1.75" x2="1.75" y2="1.75" width="0.1016" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="-1.05" y2="1.5" width="0.1016" layer="21"/>
+<wire x1="-1.5" y1="1.05" x2="-1.5" y2="1.5" width="0.1016" layer="21"/>
+<wire x1="-1.75" y1="-1.75" x2="-1.75" y2="-1.025" width="0.1016" layer="21"/>
+<wire x1="-1.025" y1="-1.75" x2="-1.75" y2="-1.75" width="0.1016" layer="21"/>
+<wire x1="1.75" y1="-1.75" x2="1.025" y2="-1.75" width="0.1016" layer="21"/>
+<wire x1="1.75" y1="-1.025" x2="1.75" y2="-1.75" width="0.1016" layer="21"/>
+<smd name="1" x="-1.655" y="0.75" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no" cream="no"/>
+<smd name="2" x="-1.655" y="0.25" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no" cream="no"/>
+<smd name="3" x="-1.655" y="-0.25" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no" cream="no"/>
+<smd name="4" x="-1.655" y="-0.75" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no" cream="no"/>
+<smd name="5" x="-0.75" y="-1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no" cream="no"/>
+<smd name="6" x="-0.25" y="-1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no" cream="no"/>
+<smd name="7" x="0.25" y="-1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no" cream="no"/>
+<smd name="8" x="0.75" y="-1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no" cream="no"/>
+<smd name="9" x="1.655" y="-0.75" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no" cream="no"/>
+<smd name="10" x="1.655" y="-0.25" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no" cream="no"/>
+<smd name="11" x="1.655" y="0.25" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no" cream="no"/>
+<smd name="12" x="1.655" y="0.75" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no" cream="no"/>
+<smd name="13" x="0.75" y="1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no" cream="no"/>
+<smd name="14" x="0.25" y="1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no" cream="no"/>
+<smd name="15" x="-0.25" y="1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no" cream="no"/>
+<smd name="16" x="-0.75" y="1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no" cream="no"/>
+<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-3.5" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.75" y1="1" x2="-1" y2="1.75" layer="21"/>
+<rectangle x1="-1.75" y1="0" x2="0" y2="1.75" layer="51"/>
 </package>
 </packages>
 </library>
@@ -765,7 +811,8 @@ design rules under a new name.</description>
 <element name="BATT1" library="adafruit" package="12BH412" value="AAA" x="-36.83" y="2.54"/>
 <element name="C2" library="adafruit" package="C0805" value="10uF" x="-24.13" y="31.75"/>
 <element name="S2" library="adafruit" package="EG1218" value="" x="-33.02" y="22.86"/>
-<element name="U1" library="TLV61225" package="DCK0006A_L" value="TLV61225L" x="-55.88" y="-6.35"/>
+<element name="U1" library="TLV61225" package="DCK0006A_M" value="TLV61225M" x="-54.61" y="-7.62"/>
+<element name="U2" library="itg_3701" package="QFN-16" value="ITG-37013X3MM" x="-58.1" y="-20.5"/>
 </elements>
 <signals>
 <signal name="VCC">
@@ -788,7 +835,9 @@ design rules under a new name.</description>
 <contactref element="BATT1" pad="+"/>
 <contactref element="C2" pad="2"/>
 <contactref element="U1" pad="3"/>
-<wire x1="-14.33" y1="2.54" x2="-56.829996875" y2="-7" width="0" layer="19" extent="1-1"/>
+<contactref element="U2" pad="12"/>
+<wire x1="-55.559996875" y1="-8.27" x2="-56.445" y2="-19.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.33" y1="2.54" x2="-55.559996875" y2="-8.27" width="0" layer="19" extent="1-1"/>
 <wire x1="-11.9888" y1="16.2306" x2="-14.33" y2="2.54" width="0" layer="19" extent="1-1"/>
 <wire x1="-18.4912" y1="16.2306" x2="-11.9888" y2="16.2306" width="0" layer="19" extent="1-1"/>
 <wire x1="-20.7049" y1="25.76" x2="-18.4912" y2="16.2306" width="0" layer="19" extent="1-1"/>
@@ -920,6 +969,33 @@ design rules under a new name.</description>
 </signal>
 <signal name="VOUT">
 <contactref element="U1" pad="4"/>
+</signal>
+<signal name="NC4">
+<contactref element="U2" pad="15"/>
+</signal>
+<signal name="NC_RSVD">
+<contactref element="U2" pad="5"/>
+</signal>
+<signal name="NC3">
+<contactref element="U2" pad="13"/>
+</signal>
+<signal name="GND_RSVD">
+<contactref element="U2" pad="14"/>
+</signal>
+<signal name="CS">
+<contactref element="U2" pad="4"/>
+</signal>
+<signal name="SDA/SDI">
+<contactref element="U2" pad="1"/>
+</signal>
+<signal name="VDDIO">
+<contactref element="U2" pad="3"/>
+</signal>
+<signal name="INT">
+<contactref element="U2" pad="10"/>
+</signal>
+<signal name="VDD">
+<contactref element="U2" pad="9"/>
 </signal>
 </signals>
 </board>
