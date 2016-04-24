@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5402,6 +5402,154 @@ http://www.ti.com/lit/ds/symlink/tlv61225.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="itg_3701">
+<packages>
+<package name="QFN-16">
+<polygon width="0" layer="31">
+<vertex x="-0.7745" y="-0.7745"/>
+<vertex x="0.7745" y="-0.7745"/>
+<vertex x="0.7745" y="0.7745"/>
+<vertex x="-0.7745" y="0.7745"/>
+</polygon>
+<wire x1="-1.75" y1="1.75" x2="1.75" y2="1.75" width="0.1016" layer="51"/>
+<wire x1="1.75" y1="1.75" x2="1.75" y2="-1.75" width="0.1016" layer="51"/>
+<wire x1="1.75" y1="-1.75" x2="-1.75" y2="-1.75" width="0.1016" layer="51"/>
+<wire x1="-1.75" y1="-1.75" x2="-1.75" y2="1.75" width="0.1016" layer="51"/>
+<wire x1="1.75" y1="1.75" x2="1.75" y2="1.025" width="0.1016" layer="21"/>
+<wire x1="1.025" y1="1.75" x2="1.75" y2="1.75" width="0.1016" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="-1.05" y2="1.5" width="0.1016" layer="21"/>
+<wire x1="-1.5" y1="1.05" x2="-1.5" y2="1.5" width="0.1016" layer="21"/>
+<wire x1="-1.75" y1="-1.75" x2="-1.75" y2="-1.025" width="0.1016" layer="21"/>
+<wire x1="-1.025" y1="-1.75" x2="-1.75" y2="-1.75" width="0.1016" layer="21"/>
+<wire x1="1.75" y1="-1.75" x2="1.025" y2="-1.75" width="0.1016" layer="21"/>
+<wire x1="1.75" y1="-1.025" x2="1.75" y2="-1.75" width="0.1016" layer="21"/>
+<smd name="1" x="-1.655" y="0.75" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no" cream="no"/>
+<smd name="2" x="-1.655" y="0.25" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no" cream="no"/>
+<smd name="3" x="-1.655" y="-0.25" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no" cream="no"/>
+<smd name="4" x="-1.655" y="-0.75" dx="0.85" dy="0.3" layer="1" roundness="75" stop="no" cream="no"/>
+<smd name="5" x="-0.75" y="-1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no" cream="no"/>
+<smd name="6" x="-0.25" y="-1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no" cream="no"/>
+<smd name="7" x="0.25" y="-1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no" cream="no"/>
+<smd name="8" x="0.75" y="-1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R90" stop="no" cream="no"/>
+<smd name="9" x="1.655" y="-0.75" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no" cream="no"/>
+<smd name="10" x="1.655" y="-0.25" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no" cream="no"/>
+<smd name="11" x="1.655" y="0.25" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no" cream="no"/>
+<smd name="12" x="1.655" y="0.75" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R180" stop="no" cream="no"/>
+<smd name="13" x="0.75" y="1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no" cream="no"/>
+<smd name="14" x="0.25" y="1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no" cream="no"/>
+<smd name="15" x="-0.25" y="1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no" cream="no"/>
+<smd name="16" x="-0.75" y="1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no" cream="no"/>
+<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-3.5" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.75" y1="1" x2="-1" y2="1.75" layer="21"/>
+<rectangle x1="-1.75" y1="0" x2="0" y2="1.75" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ITG-3701">
+<pin name="NC4" x="25.4" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="NC_RSVD" x="-22.86" y="-5.08" length="middle" direction="pwr"/>
+<pin name="NC3" x="25.4" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="NC" x="-22.86" y="10.16" length="middle" direction="oc"/>
+<pin name="SCL/SCLK" x="25.4" y="15.24" length="middle" direction="in" rot="R180"/>
+<pin name="GND_RSVD" x="25.4" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="FSYNC" x="-22.86" y="-20.32" length="middle" direction="pas"/>
+<pin name="REGOUT" x="-22.86" y="-15.24" length="middle" direction="in"/>
+<pin name="AD0/SDO" x="-22.86" y="-10.16" length="middle" direction="in"/>
+<pin name="CS" x="-22.86" y="0" length="middle" direction="pwr"/>
+<pin name="SDA/SDI" x="-22.86" y="15.24" length="middle" direction="pwr"/>
+<pin name="VDDIO" x="-22.86" y="5.08" length="middle" direction="pwr"/>
+<pin name="NC2" x="25.4" y="-10.16" length="middle" direction="in" rot="R180"/>
+<pin name="GND" x="25.4" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="INT" x="25.4" y="-15.24" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD" x="25.4" y="-20.32" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-17.78" y1="-22.86" x2="20.32" y2="-22.86" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="-22.86" x2="20.32" y2="20.32" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="20.32" x2="-17.78" y2="20.32" width="0.1524" layer="94"/>
+<wire x1="-17.78" y1="20.32" x2="-17.78" y2="-22.86" width="0.1524" layer="94"/>
+<text x="-17.4244" y="26.8986" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
+<text x="-18.0594" y="21.8186" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ITG-3701" prefix="U">
+<description>&lt;h2&gt; ITG-3701
+
+&lt;p&gt;&lt;b&gt; Gyroscope by Invensense.</description>
+<gates>
+<gate name="A" symbol="ITG-3701" x="0" y="0"/>
+</gates>
+<devices>
+<device name="3X3MM" package="QFN-16">
+<connects>
+<connect gate="A" pin="AD0/SDO" pad="6"/>
+<connect gate="A" pin="CS" pad="4"/>
+<connect gate="A" pin="FSYNC" pad="8"/>
+<connect gate="A" pin="GND" pad="12"/>
+<connect gate="A" pin="GND_RSVD" pad="14"/>
+<connect gate="A" pin="INT" pad="10"/>
+<connect gate="A" pin="NC" pad="2"/>
+<connect gate="A" pin="NC2" pad="11"/>
+<connect gate="A" pin="NC3" pad="13"/>
+<connect gate="A" pin="NC4" pad="15"/>
+<connect gate="A" pin="NC_RSVD" pad="5"/>
+<connect gate="A" pin="REGOUT" pad="7"/>
+<connect gate="A" pin="SCL/SCLK" pad="16"/>
+<connect gate="A" pin="SDA/SDI" pad="1"/>
+<connect gate="A" pin="VDD" pad="9"/>
+<connect gate="A" pin="VDDIO" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="inductor">
+<packages>
+<package name="1212">
+<description>1212 Size Inductor (3x3x1.1mm)</description>
+<smd name="P$1" x="0" y="1.3" dx="3" dy="1.4" layer="1"/>
+<smd name="P$2" x="0" y="-1.3" dx="3" dy="1.4" layer="1"/>
+<wire x1="-1.5" y1="2" x2="-1.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-2" x2="1.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2" x2="1.5" y2="2" width="0.127" layer="21"/>
+<wire x1="1.5" y1="2" x2="-1.5" y2="2" width="0.127" layer="21"/>
+<text x="-1.5" y="-3.2" size="0.6096" layer="21">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LQH3NPN4R7NJ0">
+<description>4.7uH Inductor Murata</description>
+<pin name="P$1" x="-12.7" y="2.54" length="middle"/>
+<pin name="P$2" x="10.16" y="2.54" length="middle" rot="R180"/>
+<rectangle x1="-7.62" y1="0" x2="5.08" y2="5.08" layer="94"/>
+<text x="-10.16" y="-5.08" size="1.778" layer="94">LQH3NPN4R7NJ0L</text>
+<text x="-10.16" y="-2.54" size="1.778" layer="94">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LQH3NPN4R7NJ0">
+<description>4.7uH 3x3mm Inductor</description>
+<gates>
+<gate name="G$1" symbol="LQH3NPN4R7NJ0" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="1212">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5436,17 +5584,28 @@ http://www.ti.com/lit/ds/symlink/tlv61225.pdf</description>
 <part name="R6" library="adafruit" deviceset="R-US_" device="R0805" value="10"/>
 <part name="R7" library="adafruit" deviceset="R-US_" device="R0805" value="10"/>
 <part name="U$6" library="SparkFun-LED" deviceset="LED_PIRANHA_5MM" device=""/>
-<part name="R2" library="adafruit" deviceset="R-US_" device="R0805"/>
-<part name="R3" library="adafruit" deviceset="R-US_" device="R0805"/>
-<part name="R4" library="adafruit" deviceset="R-US_" device="R0805"/>
-<part name="R8" library="adafruit" deviceset="R-US_" device="R0805"/>
-<part name="R9" library="adafruit" deviceset="R-US_" device="R0805"/>
-<part name="R10" library="adafruit" deviceset="R-US_" device="R0805"/>
+<part name="R2" library="adafruit" deviceset="R-US_" device="R0805" value="300"/>
+<part name="R3" library="adafruit" deviceset="R-US_" device="R0805" value="300"/>
+<part name="R4" library="adafruit" deviceset="R-US_" device="R0805" value="60"/>
+<part name="R8" library="adafruit" deviceset="R-US_" device="R0805" value="60"/>
+<part name="R9" library="adafruit" deviceset="R-US_" device="R0805" value="60"/>
+<part name="R10" library="adafruit" deviceset="R-US_" device="R0805" value="60"/>
 <part name="BATT1" library="adafruit" deviceset="AAA" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="C2" library="adafruit" deviceset="C-US" device="C0805" value="10uF"/>
 <part name="S2" library="adafruit" deviceset="EG1218" device="S"/>
-<part name="U1" library="TLV61225" deviceset="TLV61225" device="L"/>
+<part name="U1" library="TLV61225" deviceset="TLV61225" device="M" value="TLV61225M"/>
+<part name="U2" library="itg_3701" deviceset="ITG-3701" device="3X3MM"/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="U$7" library="inductor" deviceset="LQH3NPN4R7NJ0" device=""/>
+<part name="C3" library="adafruit" deviceset="C-US" device="C0805" value="10uF"/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="P+4" library="supply1" deviceset="VCC" device=""/>
+<part name="P+5" library="supply1" deviceset="VCC" device=""/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="R11" library="adafruit" deviceset="R-US_" device="M0805" value="4.7k"/>
+<part name="R12" library="adafruit" deviceset="R-US_" device="M0805" value="4.7k"/>
+<part name="P+6" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5458,8 +5617,8 @@ http://www.ti.com/lit/ds/symlink/tlv61225.pdf</description>
 <instance part="P+1" gate="VCC" x="35.56" y="81.28"/>
 <instance part="GND1" gate="1" x="106.68" y="60.96"/>
 <instance part="C1" gate="G$1" x="25.4" y="71.12"/>
-<instance part="GND2" gate="1" x="25.4" y="60.96"/>
-<instance part="JP3" gate="G$1" x="33.02" y="58.42" rot="R180"/>
+<instance part="GND2" gate="1" x="25.4" y="63.5"/>
+<instance part="JP3" gate="G$1" x="15.24" y="58.42" rot="R180"/>
 <instance part="JP1" gate="G$1" x="134.62" y="45.72"/>
 <instance part="JP2" gate="G$1" x="127" y="55.88"/>
 <instance part="P+2" gate="VCC" x="134.62" y="73.66"/>
@@ -5497,7 +5656,6 @@ http://www.ti.com/lit/ds/symlink/tlv61225.pdf</description>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="25.4" y1="66.04" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="S1" gate="1" pin="S"/>
@@ -5514,14 +5672,14 @@ http://www.ti.com/lit/ds/symlink/tlv61225.pdf</description>
 <segment>
 <pinref part="JP3" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="3"/>
-<wire x1="46.99" y1="58.42" x2="35.56" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="46.99" y1="58.42" x2="17.78" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="4"/>
-<wire x1="46.99" y1="55.88" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="46.99" y1="55.88" x2="17.78" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BLUE_CTRL" class="0">
@@ -5543,6 +5701,7 @@ http://www.ti.com/lit/ds/symlink/tlv61225.pdf</description>
 <segment>
 <wire x1="93.98" y1="43.18" x2="101.6" y2="43.18" width="0.1524" layer="91"/>
 <label x="101.6" y="43.18" size="1.778" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="12"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -5583,6 +5742,27 @@ http://www.ti.com/lit/ds/symlink/tlv61225.pdf</description>
 <junction x="134.62" y="50.8"/>
 </segment>
 </net>
+<net name="INT" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="6"/>
+<wire x1="46.99" y1="50.8" x2="45.72" y2="50.8" width="0.1524" layer="91"/>
+<label x="45.72" y="50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="14"/>
+<wire x1="93.98" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
+<label x="111.76" y="48.26" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="15"/>
+<wire x1="93.98" y1="50.8" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
+<label x="96.52" y="50.8" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -5619,24 +5799,14 @@ http://www.ti.com/lit/ds/symlink/tlv61225.pdf</description>
 <wire x1="2.54" y1="27.94" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="76.2" y1="27.94" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
+<pinref part="U$4" gate="G$1" pin="E"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="152.4" y1="33.02" x2="152.4" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="35.56" x2="152.4" y2="27.94" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$10" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="E"/>
-<wire x1="76.2" y1="35.56" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="E"/>
-<wire x1="152.4" y1="35.56" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="76.2" y1="35.56" x2="76.2" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -5760,10 +5930,11 @@ http://www.ti.com/lit/ds/symlink/tlv61225.pdf</description>
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="55.88" x2="142.24" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="53.34" x2="152.4" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="53.34" x2="152.4" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="53.34" x2="162.56" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="53.34" x2="162.56" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="C"/>
 <wire x1="152.4" y1="45.72" x2="152.4" y2="53.34" width="0.1524" layer="91"/>
 <junction x="152.4" y="53.34"/>
 </segment>
@@ -5793,10 +5964,99 @@ http://www.ti.com/lit/ds/symlink/tlv61225.pdf</description>
 <plain>
 </plain>
 <instances>
+<instance part="U2" gate="A" x="0" y="2.54"/>
+<instance part="GND9" gate="1" x="55.88" y="-10.16"/>
+<instance part="P+4" gate="VCC" x="-45.72" y="20.32"/>
+<instance part="P+5" gate="VCC" x="48.26" y="-10.16"/>
+<instance part="GND10" gate="1" x="-25.4" y="-25.4"/>
+<instance part="R11" gate="G$1" x="-25.4" y="27.94" rot="R90"/>
+<instance part="R12" gate="G$1" x="27.94" y="27.94" rot="R90"/>
+<instance part="P+6" gate="VCC" x="0" y="45.72"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="U2" gate="A" pin="GND"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="25.4" y1="-2.54" x2="55.88" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-2.54" x2="55.88" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="GND_RSVD"/>
+<wire x1="25.4" y1="7.62" x2="55.88" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="7.62" x2="55.88" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="55.88" y="-2.54"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="FSYNC"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="-22.86" y1="-17.78" x2="-25.4" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="-17.78" x2="-25.4" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="AD0/SDO"/>
+<wire x1="-22.86" y1="-7.62" x2="-25.4" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="-7.62" x2="-25.4" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="-25.4" y="-17.78"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="P+4" gate="VCC" pin="VCC"/>
+<wire x1="-45.72" y1="17.78" x2="-45.72" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VDDIO"/>
+<wire x1="-45.72" y1="7.62" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="CS"/>
+<wire x1="-25.4" y1="7.62" x2="-22.86" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="2.54" x2="-25.4" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="2.54" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
+<junction x="-25.4" y="7.62"/>
+</segment>
+<segment>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+<wire x1="48.26" y1="-12.7" x2="48.26" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VDD"/>
+<wire x1="48.26" y1="-17.78" x2="25.4" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="33.02" x2="27.94" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="38.1" x2="0" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="0" y1="38.1" x2="-25.4" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="38.1" x2="-25.4" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
+<wire x1="0" y1="43.18" x2="0" y2="38.1" width="0.1524" layer="91"/>
+<junction x="0" y="38.1"/>
+</segment>
+</net>
+<net name="INT" class="0">
+<segment>
+<pinref part="U2" gate="A" pin="INT"/>
+<wire x1="25.4" y1="-12.7" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
+<label x="27.94" y="-12.7" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="U2" gate="A" pin="SDA/SDI"/>
+<wire x1="-22.86" y1="17.78" x2="-25.4" y2="17.78" width="0.1524" layer="91"/>
+<label x="-27.94" y="17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="-25.4" y1="17.78" x2="-27.94" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="22.86" x2="-25.4" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-25.4" y="17.78"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="U2" gate="A" pin="SCL/SCLK"/>
+<wire x1="25.4" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
+<label x="30.48" y="17.78" size="1.778" layer="95" xref="yes"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="17.78" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="22.86" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
+<junction x="27.94" y="17.78"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -5807,8 +6067,11 @@ http://www.ti.com/lit/ds/symlink/tlv61225.pdf</description>
 <instance part="BATT1" gate="G$1" x="10.16" y="50.8" rot="R270"/>
 <instance part="GND7" gate="1" x="10.16" y="38.1"/>
 <instance part="C2" gate="G$1" x="33.02" y="53.34"/>
-<instance part="S2" gate="1" x="60.96" y="48.26" rot="R270"/>
-<instance part="U1" gate="G$1" x="99.06" y="50.8"/>
+<instance part="S2" gate="1" x="60.96" y="50.8" rot="R90"/>
+<instance part="U1" gate="G$1" x="88.9" y="53.34"/>
+<instance part="GND8" gate="1" x="111.76" y="38.1"/>
+<instance part="U$7" gate="G$1" x="91.44" y="78.74"/>
+<instance part="C3" gate="G$1" x="134.62" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -5823,6 +6086,21 @@ http://www.ti.com/lit/ds/symlink/tlv61225.pdf</description>
 <wire x1="33.02" y1="48.26" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="43.18" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
 <junction x="10.16" y="43.18"/>
+<pinref part="S2" gate="1" pin="O"/>
+<wire x1="55.88" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="50.8" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="43.18" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
+<junction x="33.02" y="43.18"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="106.68" y1="43.18" x2="111.76" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="43.18" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="48.26" x2="134.62" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="43.18" x2="111.76" y2="43.18" width="0.1524" layer="91"/>
+<junction x="111.76" y="43.18"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -5832,11 +6110,75 @@ http://www.ti.com/lit/ds/symlink/tlv61225.pdf</description>
 <wire x1="10.16" y1="63.5" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="63.5" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VIN"/>
+<wire x1="33.02" y1="63.5" x2="48.26" y2="63.5" width="0.1524" layer="91"/>
+<junction x="33.02" y="63.5"/>
+<pinref part="S2" gate="1" pin="S"/>
+<wire x1="48.26" y1="63.5" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="63.5" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="55.88" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="55.88" x2="48.26" y2="63.5" width="0.1524" layer="91"/>
+<junction x="48.26" y="63.5"/>
+<pinref part="U$7" gate="G$1" pin="P$1"/>
+<wire x1="78.74" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="81.28" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
+<junction x="66.04" y="63.5"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="EN"/>
+<pinref part="S2" gate="1" pin="P"/>
+<wire x1="71.12" y1="53.34" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="P$2"/>
+<wire x1="101.6" y1="81.28" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="81.28" x2="114.3" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="L"/>
+<wire x1="114.3" y1="63.5" x2="106.68" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VOUT"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="58.42" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="58.42" x2="134.62" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="58.42" x2="134.62" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="FB"/>
+<wire x1="106.68" y1="48.26" x2="114.3" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="48.26" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
+<junction x="114.3" y="58.42"/>
+<wire x1="134.62" y1="58.42" x2="144.78" y2="58.42" width="0.1524" layer="91"/>
+<junction x="134.62" y="58.42"/>
+<label x="144.78" y="58.42" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,4,71.12,63.5,U1,VIN,N$20,,,"/>
+<approved hash="104,4,106.68,58.42,U1,VOUT,VCC,,,"/>
+<approved hash="204,3,25.4,12.7,U2,NC4,,,,"/>
+<approved hash="204,3,-22.86,-2.54,U2,NC_RSVD,,,,"/>
+<approved hash="204,3,25.4,2.54,U2,NC3,,,,"/>
+<approved hash="104,3,25.4,7.62,U2,GND_RSVD,GND,,,"/>
+<approved hash="202,3,-22.86,-12.7,U2,REGOUT,,,,"/>
+<approved hash="104,3,-22.86,2.54,U2,CS,VCC,,,"/>
+<approved hash="104,3,-22.86,17.78,U2,SDA/SDI,SDA,,,"/>
+<approved hash="104,3,-22.86,7.62,U2,VDDIO,VCC,,,"/>
+<approved hash="202,3,25.4,-7.62,U2,NC2,,,,"/>
+<approved hash="104,3,25.4,-17.78,U2,VDD,VCC,,,"/>
+<approved hash="113,1,17.5429,55.7488,JP3,,,,,"/>
+<approved hash="113,1,132.317,47.1212,JP1,,,,,"/>
+<approved hash="113,1,124.697,58.5512,JP2,,,,,"/>
+<approved hash="113,1,142.24,55.4905,S1,,,,,"/>
+<approved hash="113,4,60.96,49.9195,S2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

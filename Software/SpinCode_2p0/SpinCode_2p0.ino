@@ -44,7 +44,7 @@ void loop()
   sum = 0;
   for(int i = 0; i < 8; i++)
   { sum = sum + readGyro();
-    delay(1);
+    delayMicroseconds(500);
   }
   sum = sum >> 3;
   accel_in = (int)sum;
