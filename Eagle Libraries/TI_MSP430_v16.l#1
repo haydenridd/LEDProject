@@ -28374,7 +28374,7 @@ PDIP (N) 20 Pin Package &lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="G2XX3---PW20">
+<deviceset name="G2XX3---PW20" prefix="U">
 <description>&lt;h1&gt;MSP430G2XX1&lt;/h1&gt;
 
 TSSOP (PW) 20 Pin Package &lt;br&gt;</description>

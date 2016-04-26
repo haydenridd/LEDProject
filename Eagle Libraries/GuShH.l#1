@@ -1454,8 +1454,8 @@ info@gushh.net</description>
 <devices>
 <device name="FSCT-ND" package="SOT-23">
 <connects>
-<connect gate="G$1" pin="B" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="B" pad="3"/>
+<connect gate="G$1" pin="C" pad="1"/>
 <connect gate="G$1" pin="E" pad="2"/>
 </connects>
 <technologies>

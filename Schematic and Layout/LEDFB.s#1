@@ -5642,63 +5642,6 @@ http://www.ti.com/lit/ds/symlink/tlv61225.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Electromechanical">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find anything that moves- switches, relays, buttons, potentiometers. Also, anything that goes on a board but isn't electrical in nature- screws, standoffs, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="STAND-OFF">
-<description>&lt;b&gt;Stand Off&lt;/b&gt;&lt;p&gt;
-This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
-<wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
-<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
-<hole x="0" y="0" drill="3.302"/>
-</package>
-<package name="STAND-OFF-TIGHT">
-<description>&lt;b&gt;Stand Off&lt;/b&gt;&lt;p&gt;
-This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
-<wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
-<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
-<hole x="0" y="0" drill="3.048"/>
-</package>
-</packages>
-<symbols>
-<symbol name="STAND-OFF">
-<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="STAND-OFF" prefix="H">
-<description>&lt;b&gt;#4 Stand Off&lt;/b&gt;&lt;p&gt;
-This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
-<gates>
-<gate name="G$1" symbol="STAND-OFF" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="STAND-OFF">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TIGHT" package="STAND-OFF-TIGHT">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5718,7 +5661,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="JP1" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="R1" library="adafruit" deviceset="R-US_" device="R0805" value="47k"/>
-<part name="RST" library="switch-omron" deviceset="10-XX" device=""/>
+<part name="S1" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="U4" library="GuShH" deviceset="MMBT3904" device="FSCT-ND"/>
 <part name="U5" library="GuShH" deviceset="MMBT3904" device="FSCT-ND"/>
@@ -5756,10 +5699,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="AAA" library="adafruit" deviceset="AAA" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="H1" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
-<part name="H2" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
-<part name="H3" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
-<part name="H4" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5776,7 +5715,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <instance part="JP1" gate="G$1" x="134.62" y="45.72"/>
 <instance part="P+2" gate="VCC" x="134.62" y="73.66"/>
 <instance part="R1" gate="G$1" x="134.62" y="60.96" rot="R90"/>
-<instance part="RST" gate="1" x="142.24" y="53.34" rot="R270"/>
+<instance part="S1" gate="1" x="142.24" y="53.34" rot="R270"/>
 <instance part="GND3" gate="1" x="149.86" y="45.72"/>
 <instance part="GND11" gate="1" x="116.84" y="68.58" rot="R180"/>
 <instance part="JP2" gate="A" x="127" y="58.42"/>
@@ -5822,11 +5761,11 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="RST" gate="1" pin="S"/>
+<pinref part="S1" gate="1" pin="S"/>
 <wire x1="147.32" y1="53.34" x2="149.86" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="149.86" y1="53.34" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="RST" gate="1" pin="S1"/>
+<pinref part="S1" gate="1" pin="S1"/>
 <wire x1="149.86" y1="50.8" x2="149.86" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="50.8" x2="149.86" y2="50.8" width="0.1524" layer="91"/>
 <junction x="149.86" y="50.8"/>
@@ -5899,11 +5838,11 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <wire x1="119.38" y1="55.88" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="55.88" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
 <junction x="119.38" y="55.88"/>
-<pinref part="RST" gate="1" pin="P1"/>
+<pinref part="S1" gate="1" pin="P1"/>
 <wire x1="137.16" y1="50.8" x2="134.62" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="50.8" x2="134.62" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="RST" gate="1" pin="P"/>
+<pinref part="S1" gate="1" pin="P"/>
 <wire x1="134.62" y1="53.34" x2="134.62" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="53.34" x2="134.62" y2="53.34" width="0.1524" layer="91"/>
 <junction x="134.62" y="53.34"/>
@@ -6242,10 +6181,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <instance part="U8" gate="G$1" x="91.44" y="78.74"/>
 <instance part="C3" gate="G$1" x="134.62" y="53.34"/>
 <instance part="AAA" gate="G$1" x="10.16" y="50.8" rot="R270"/>
-<instance part="H1" gate="G$1" x="10.16" y="91.44"/>
-<instance part="H2" gate="G$1" x="17.78" y="91.44"/>
-<instance part="H3" gate="G$1" x="25.4" y="91.44"/>
-<instance part="H4" gate="G$1" x="33.02" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -6335,23 +6270,23 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,4,71.12,63.5,U9,VIN,N$20,,,"/>
-<approved hash="104,4,106.68,58.42,U9,VOUT,VCC,,,"/>
-<approved hash="204,3,25.4,12.7,U7,NC4,,,,"/>
-<approved hash="204,3,-22.86,-2.54,U7,NC_RSVD,,,,"/>
-<approved hash="204,3,25.4,2.54,U7,NC3,,,,"/>
-<approved hash="104,3,25.4,7.62,U7,GND_RSVD,GND,,,"/>
-<approved hash="202,3,-22.86,-12.7,U7,REGOUT,,,,"/>
-<approved hash="104,3,-22.86,2.54,U7,CS,VCC,,,"/>
-<approved hash="104,3,-22.86,17.78,U7,SDA/SDI,SDA,,,"/>
-<approved hash="104,3,-22.86,7.62,U7,VDDIO,VCC,,,"/>
-<approved hash="202,3,25.4,-7.62,U7,NC2,,,,"/>
-<approved hash="104,3,25.4,-17.78,U7,VDD,VCC,,,"/>
+<approved hash="104,4,71.12,63.5,U1,VIN,N$20,,,"/>
+<approved hash="104,4,106.68,58.42,U1,VOUT,VCC,,,"/>
+<approved hash="204,3,25.4,12.7,U2,NC4,,,,"/>
+<approved hash="204,3,-22.86,-2.54,U2,NC_RSVD,,,,"/>
+<approved hash="204,3,25.4,2.54,U2,NC3,,,,"/>
+<approved hash="104,3,25.4,7.62,U2,GND_RSVD,GND,,,"/>
+<approved hash="202,3,-22.86,-12.7,U2,REGOUT,,,,"/>
+<approved hash="104,3,-22.86,2.54,U2,CS,VCC,,,"/>
+<approved hash="104,3,-22.86,17.78,U2,SDA/SDI,SDA,,,"/>
+<approved hash="104,3,-22.86,7.62,U2,VDDIO,VCC,,,"/>
+<approved hash="202,3,25.4,-7.62,U2,NC2,,,,"/>
+<approved hash="104,3,25.4,-17.78,U2,VDD,VCC,,,"/>
 <approved hash="113,1,17.5429,55.7488,JP3,,,,,"/>
 <approved hash="113,1,132.317,47.1212,JP1,,,,,"/>
+<approved hash="113,1,124.697,58.5512,JP2,,,,,"/>
 <approved hash="113,1,142.24,55.4905,S1,,,,,"/>
 <approved hash="113,4,60.96,49.9195,S2,,,,,"/>
-<approved hash="113,1,124.697,59.8212,JP2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
