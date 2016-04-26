@@ -3361,15 +3361,19 @@ type 0309, grid 2.5 mm</description>
 <text x="-2.794" y="2.54" size="1.27" layer="25" font="vector">&gt;NAME</text>
 </package>
 <package name="12BH412">
-<wire x1="-20" y1="4.5" x2="-20" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="18.5" y1="-4.5" x2="18.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="18.5" y1="-1.5" x2="20" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="20" y1="-1.5" x2="20" y2="1.5" width="0.127" layer="21"/>
-<wire x1="20" y1="1.5" x2="18.5" y2="1.5" width="0.127" layer="21"/>
-<wire x1="18.5" y1="1.5" x2="18.5" y2="4.5" width="0.127" layer="21"/>
-<pad name="-" x="-22.5" y="0" drill="1" diameter="2.54"/>
-<pad name="+" x="22.5" y="0" drill="1" diameter="2.54"/>
+<pad name="-" x="-22.352" y="0" drill="1" diameter="2.54"/>
+<pad name="+" x="22.352" y="0" drill="1" diameter="2.54"/>
 <text x="-5.08" y="-1.27" size="2.54" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-24.9936" y1="6.5024" x2="-24.9936" y2="-6.5024" width="0.127" layer="21"/>
+<wire x1="24.9936" y1="6.5024" x2="24.9936" y2="-6.5024" width="0.127" layer="21"/>
+<wire x1="-24.9936" y1="6.5024" x2="24.9936" y2="6.5024" width="0.127" layer="21"/>
+<wire x1="-24.9936" y1="-6.5024" x2="24.9936" y2="-6.5024" width="0.127" layer="21"/>
+<wire x1="29.21" y1="1.27" x2="29.21" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="30.48" y1="0" x2="27.94" y2="0" width="0.127" layer="21"/>
+<wire x1="-29.21" y1="0" x2="-26.67" y2="0" width="0.127" layer="21"/>
+<wire x1="25.4" y1="2.54" x2="26.67" y2="2.54" width="0.127" layer="21"/>
+<wire x1="26.67" y1="2.54" x2="26.67" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="26.67" y1="-2.54" x2="25.4" y2="-2.54" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>

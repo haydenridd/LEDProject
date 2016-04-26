@@ -1,0 +1,37 @@
+Partlist exported from C:/Users/Casey Laptop/Documents/LEDProject/Schematic and Layout/LEDFB.sch at 4/25/2016 9:32 PM
+
+Part Value           Device          Package         Description                                                                  MF MPN      OC_FARNELL OC_NEWARK
+AAA  AAA             AAA             12BH412         AAA PC pin holder                                                                                            
+C1   .1uF            C-USC0805       C0805           CAPACITOR, American symbol                                                                                   
+C2   10uF            C-USC0805       C0805           CAPACITOR, American symbol                                                                                   
+C3   10uF            C-USC0805       C0805           CAPACITOR, American symbol                                                                                   
+H1   STAND-OFF       STAND-OFF       STAND-OFF       #4 Stand Off                                                                                                 
+H2   STAND-OFF       STAND-OFF       STAND-OFF       #4 Stand Off                                                                                                 
+H3   STAND-OFF       STAND-OFF       STAND-OFF       #4 Stand Off                                                                                                 
+H4   STAND-OFF       STAND-OFF       STAND-OFF       #4 Stand Off                                                                                                 
+JP1                  PINHD-1X1       1X01            PIN HEADER                                                                                                   
+JP2                  PINHD-1X3       1X03            PIN HEADER                                                                                                   
+JP3                  PINHD-1X2       1X02            PIN HEADER                                                                                                   
+R1   47k             R-US_R0805      R0805           RESISTOR, American symbol                                                                                    
+R2   300             R-US_R0805      R0805           RESISTOR, American symbol                                                                                    
+R3   300             R-US_R0805      R0805           RESISTOR, American symbol                                                                                    
+R4   60              R-US_R0805      R0805           RESISTOR, American symbol                                                                                    
+R5   60              R-US_R0805      R0805           RESISTOR, American symbol                                                                                    
+R6   60              R-US_R0805      R0805           RESISTOR, American symbol                                                                                    
+R7   60              R-US_R0805      R0805           RESISTOR, American symbol                                                                                    
+R8   10              R-US_R0805      R0805           RESISTOR, American symbol                                                                                    
+R9   10              R-US_R0805      R0805           RESISTOR, American symbol                                                                                    
+R10  10              R-US_R0805      R0805           RESISTOR, American symbol                                                                                    
+R11  4.7k            R-US_M0805      M0805           RESISTOR, American symbol                                                                                    
+R12  4.7k            R-US_M0805      M0805           RESISTOR, American symbol                                                                                    
+RST                  10-XX           B3F-10XX        OMRON SWITCH                                                                    B3F-1000 176432     36M3542  
+S2                   EG1218S         EG1218          SLIDING SWITCH                                                                                               
+U1\  G2XX3---PW20    G2XX3---PW20    PW20            MSP430G2XX1                                                                                                  
+U2   LED_PIRANHA_5MM LED_PIRANHA_5MM LED_PIRANHA_5MM High-brightness RGB through-hole LED, similar to that used in the Shiftbrite                                 
+U3   LED_PIRANHA_5MM LED_PIRANHA_5MM LED_PIRANHA_5MM High-brightness RGB through-hole LED, similar to that used in the Shiftbrite                                 
+U4   MMBT3904FSCT-ND MMBT3904FSCT-ND SOT-23                                                                                                                       
+U5   MMBT3904FSCT-ND MMBT3904FSCT-ND SOT-23                                                                                                                       
+U6   MMBT3904FSCT-ND MMBT3904FSCT-ND SOT-23                                                                                                                       
+U7   ITG-37013X3MM   ITG-37013X3MM   QFN-16          ITG-3701                                                                                                     
+U8   LQH3NPN4R7NJ0   LQH3NPN4R7NJ0   1212            4.7uH 3x3mm Inductor                                                                                         
+U9   TLV61225M       TLV61225M       DCK0006A_M      TLV61225 part by Texas Instruments.                                                                          
