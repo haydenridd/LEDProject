@@ -5513,8 +5513,6 @@ http://www.ti.com/lit/ds/symlink/tlv61225.pdf</description>
 <wire x1="-1.75" y1="-1.75" x2="-1.75" y2="1.75" width="0.1016" layer="51"/>
 <wire x1="1.75" y1="1.75" x2="1.75" y2="1.025" width="0.1016" layer="21"/>
 <wire x1="1.025" y1="1.75" x2="1.75" y2="1.75" width="0.1016" layer="21"/>
-<wire x1="-1.5" y1="1.5" x2="-1.05" y2="1.5" width="0.1016" layer="21"/>
-<wire x1="-1.5" y1="1.05" x2="-1.5" y2="1.5" width="0.1016" layer="21"/>
 <wire x1="-1.75" y1="-1.75" x2="-1.75" y2="-1.025" width="0.1016" layer="21"/>
 <wire x1="-1.025" y1="-1.75" x2="-1.75" y2="-1.75" width="0.1016" layer="21"/>
 <wire x1="1.75" y1="-1.75" x2="1.025" y2="-1.75" width="0.1016" layer="21"/>
@@ -5537,8 +5535,9 @@ http://www.ti.com/lit/ds/symlink/tlv61225.pdf</description>
 <smd name="16" x="-0.75" y="1.655" dx="0.85" dy="0.3" layer="1" roundness="75" rot="R270" stop="no" cream="no"/>
 <text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2" y="-3.5" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.75" y1="1" x2="-1" y2="1.75" layer="21"/>
-<rectangle x1="-1.75" y1="0" x2="0" y2="1.75" layer="51"/>
+<circle x="-1.27" y="1.27" radius="0.152928125" width="0.127" layer="21"/>
+<wire x1="-1.7425" y1="1.75" x2="-1.7425" y2="1.025" width="0.1016" layer="21"/>
+<wire x1="-1.025" y1="1.7425" x2="-1.75" y2="1.7425" width="0.1016" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -6353,7 +6352,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <approved hash="104,3,25.4,-17.78,U7,VDD,VCC,,,"/>
 <approved hash="113,1,17.5429,55.7488,JP3,,,,,"/>
 <approved hash="113,1,132.317,47.1212,JP1,,,,,"/>
-<approved hash="113,1,142.24,55.4905,S1,,,,,"/>
+<approved hash="113,1,142.24,55.4905,RST,,,,,"/>
 <approved hash="113,4,60.96,49.9195,S2,,,,,"/>
 <approved hash="113,1,124.697,59.8212,JP2,,,,,"/>
 </errors>
